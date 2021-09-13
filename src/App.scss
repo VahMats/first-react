@@ -1,0 +1,178 @@
+$bluecol: #fff;
+$test: 1px solid white;
+
+$breakpoints: (
+  xs: 0,
+  sm: 320px,
+  md: 768px,
+  lg: 1140px
+);
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(img/background.jpg);
+}
+
+.header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+
+.getcard {
+  position: relative;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.credit {
+  color: $bluecol;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.from {
+  color: $bluecol;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.choose {
+  position: absolute;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $bluecol;
+  top: 110px;
+  text-align: center;
+}
+
+.money {
+  width: 80%;
+}
+
+.cash2 {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.yourch {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cash {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bott {
+  margin: 0 auto;
+  width: 70%;
+  padding: 15px;
+  background-color: red;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.talk {
+  margin-top: 20px;
+  span{
+    font-weight: bold;
+    font-size: 40px;
+  }
+}
+
+.footer {
+  height: 150px;
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.383);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: azure;
+  border-radius: 50%;
+}
+
+
+
+.column {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  p{
+    width: 200px;
+    margin-left: 5px;
+  }
+  span{
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
+
+.text {
+  color: #fff;
+  width: 200px;
+  position: absolute;
+  bottom: 150px;
+  left: 30px;
+  p {
+    font-size: 20px;
+    margin: 5px;
+  }
+}
+
+@media all and (min-width: 640px) and (max-width: 1024px){
+  .getcard {
+    width: 600px;
+  }
+  
+  .text p{
+    font-size: 16px;
+  }
+
+  .footer {
+    height: 100px;
+    p {
+      font-size: 16px;
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+  }
+
+}
+
+@media all and (max-width: 640px){
+
+  
+}
+
+
+
+
+
+
+
