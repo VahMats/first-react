@@ -24,10 +24,10 @@ function App() {
         </div>
       </div>
       <div className = "text">
-        <p>Credit card debt relief</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-        <p>-Andrea, from FDA</p>
-      </div>
+          <p>Credit card debt relief</p>
+          <p>Lorem Ipsum is simply dummy text of the  printing and typesetting industry. Lorem Ipsum   has been</p>
+          <p>-Andrea, from FDA</p>
+        </div>
       <div className = "footer">
         <div className = "column">
           <div className = "circle"></div>
