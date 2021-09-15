@@ -4,7 +4,16 @@ import './App.scss';
 function App() {
   return (
     <div>
+      <div className="tree">
+
       <div className = "header">
+        <div className="textd">
+        <div className = "text">
+          <p>Credit card debt relief</p>
+          <p>Lorem Ipsum is simply dummy text of the  printing and typesetting industry. Lorem Ipsum   has been</p>
+          <p>-Andrea, from FDA</p>
+        </div>
+        </div>
         <div className = "getcard">
           <p className = "credit">Get Credit Card Dept Help</p>
           <p className = "from">From America's top debt relief company</p>
@@ -23,11 +32,6 @@ function App() {
           </div>
         </div>
       </div>
-      <div className = "text">
-          <p>Credit card debt relief</p>
-          <p>Lorem Ipsum is simply dummy text of the  printing and typesetting industry. Lorem Ipsum   has been</p>
-          <p>-Andrea, from FDA</p>
-        </div>
       <div className = "footer">
         <div className = "column">
           <div className = "circle"></div>
@@ -43,6 +47,7 @@ function App() {
         </div>
       </div>
 
+      </div>
     </div>
   );
 }

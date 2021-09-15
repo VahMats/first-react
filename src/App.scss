@@ -1,26 +1,38 @@
 $wcol: #fff;
 $test: 1px solid white;
 
-body{
-  margin: 0;
-  padding: 0;
-  background-image: url(img/background.jpg);
-  background-repeat: no-repeat;
+.tree {
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  height: 100vh;
 
+  @media (min-width:768px){
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+  }
+  background: none;
 }
+
+
 
 .header {
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.textd {
   display: flex;
-  justify-content: end;
+  align-items: flex-end;
   
 }
 
 .text {
+  // align-self: end;
+  max-width: 300px;
   color: $wcol;
-  width: 200px;
-  position: absolute;
-  bottom: 20%;
   p {
     font-size: 20px;
     margin: 5px;
@@ -28,11 +40,11 @@ body{
 }
 
 .getcard {
-  margin-right: 50px;
-  position: relative;
-  width: 650px;
+  width: 100%;
   margin-top: 20px;
   justify-self: end;
+
+
 }
 
 .credit {
@@ -48,13 +60,11 @@ body{
 }
 
 .choose {
-  position: absolute;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   background-color: $wcol;
-  top: 110px;
   text-align: center;
+  box-sizing: border-box;
+
 }
 
 .money {
@@ -98,16 +108,18 @@ body{
 }
 
 .footer {
-  height: 20%;
+  padding: 20px 0;
   width: 100%;
   background-color: rgba(0, 255, 255, 0.383);
-  position: absolute;
-  bottom: 0;
+
   display: flex;
+
   justify-content: space-around;
 }
 
 .circle {
+  min-width: 70px;
+  min-height: 70px;
   width: 100px;
   height: 100px;
   background-color: $wcol;
@@ -117,11 +129,13 @@ body{
 
 
 .column {
+  width: 30%;
   display: flex;
   align-items: center;
   font-size: 20px;
+  box-sizing: border-box;
   p{
-    width: 200px;
+    // width: 200px;
     margin-left: 5px;
   }
   span{
@@ -132,131 +146,80 @@ body{
 
 
 
-@media all and (max-width: 1024px){
-  .getcard {
-    width: 500px;
-  }
-  
-  .text p{
-    font-size: 16px;
-  }
-
-  .footer {
-    height: 100px;
-    p {
-      font-size: 16px;
-      span {
-        font-size: 20px;
-      }
-    }
+@media all and (min-width:768px) and (max-width: 1440px){
+  .header {
+    grid-template-columns:30% 70%;
+    column-gap: 10px;
   }
 
   .circle {
     width: 70px;
     height: 70px;
-  }
-
-}
-
-@media all and (max-width:800px){
-  .getcard {
-    width: 400px;
-
-  }
-  
-  .credit {
-    font-size: 25px;
-    margin-bottom: 5px;
-  }
-
-  .from {
-    font-size: 13px;
-  }
-
-  .choose {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    top: 100px;
-  }
-
-  .cash {
-    font-size: 16px;
-    
-  }
-
-  .bott {
-    width: 50%;
-    margin-top: 0;
-  }
-
-  .talk {
-    span {
-      font-size: 20px;
-    }
   }
 
   .column {
-    font-size: 16px;
+    font-size: 15px;
     span {
-      font-size: 20px;
-    }
-    p {
-      width: 150px;
+      font-size: 18px;
     }
   }
-  .circle {
-    width: 70px;
-    height: 70px;
-  }
+  
 }
 
-@media all and (max-width:680px){
-  .header{
-    justify-content: center;
+@media all and (max-width:768px){
+  .header {
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin-bottom: 20px;
   }
 
-  .text {
-    top: 10px;
-    text-align: right;
-    right: 10px;
-    height: 25%;
-    p {
-      font-size: 20px;
-    }
+  .textd {
+    width: 100%;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .getcard {
-    margin: 0;
-    margin-top: 30%;
-    width: 90%;    
-
+    text-align: center;
+    padding: 0 40px;
+    box-sizing: border-box;
   }
 
   .credit {
-  font-size: 40px;
-  text-align: center;
-
+    color:  black;
   }
-
   .from {
-    font-size: 25px;
-    text-align: center;
-    margin-top: 0px;
+    color: black;
   }
 
   .choose {
-    top: 130px;
+    border: 1px solid black;
   }
-
+  
   .footer {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    height: auto;
-    bottom: 0;
+  }
+
+  .column {
+    margin: 5px 0;
+    width: 90%;
+  }
+  
+  .circle {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
   }
 
 }
+
+
+
+
 
 
 
